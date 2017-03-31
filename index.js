@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.use('/foobar', express.static('./public', {
+app.use('/', express.static('./public', {
     index: ['index.html']
 }));
 
